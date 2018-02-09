@@ -7,5 +7,4 @@
     owner: "{{ item.user }}"
     group: "{{ item.user }}"
     mode: 0600
-  with_items:
-    mysql_shell_access_users
+  with_items: "{{ mysql_shell_access_users }}"
